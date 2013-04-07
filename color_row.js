@@ -3,7 +3,7 @@ function colorRow(){
   var sheet = ss.getSheets()[0]; // Get the first sheet
 
   var dataRange = sheet.getRange("E2:E27"), // This is hardcoded range that I care about on my sheet
-      dateOffset = (6*28*24*60*60*1000), // Three months
+      dateOffset = (6*28*24*60*60*1000), // 24 Weeks
       contactedDate, limitDate, thisCell;
 
   dataRange.activate(); // Provides a visual indicator of which rows are being inspected
